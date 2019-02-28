@@ -1,8 +1,8 @@
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  // const token = 'mytoken';
-  return '';
+  const token = 'mytoken';
+  //return '';
 }
 
 function forkRepo() {
@@ -25,7 +25,7 @@ function showResults(json) {
 
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
-    const url = 'https://api.github.com/repos/MERCERNYC//js-ajax-fetch-lab/issues';
+    const url = 'https://api.github.com/repos/Joecleverman//js-ajax-fetch-lab/issues';
     const postData = {
       title: document.getElementById('title').value,
       body: document.getElementById('body').value
@@ -42,7 +42,7 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
-  const url = 'https://api.github.com/repos/MERCERNYC/js-ajax-fetch-lab/issues';
+  const url = 'https://api.github.com/repos/Joecleverman/js-ajax-fetch-lab/issues';
 
   fetch(url, {
     headers: {
