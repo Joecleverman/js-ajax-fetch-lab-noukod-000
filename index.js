@@ -12,7 +12,7 @@ function forkRepo() {
    method: 'POST',
     headers: {
       Accept: 'application/vnd.github.v3+json',
-      Authorization: `token 1a3d00c7370b347b4a7bd71808b6f584e15d1f01`
+      Authorization: `token 172e29160306d340676bba195a4447a585aed63b`
     }
    })
   .then(res => res.json())
