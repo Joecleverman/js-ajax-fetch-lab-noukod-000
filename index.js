@@ -8,7 +8,7 @@ function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   const url = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks'
   fetch(url, {
-   method: 'POST',
+   method: 'post',
     headers: {
       Accept: 'application/vnd.github.v3+json',
       Authorization: `token ${getToken()}`
@@ -32,7 +32,7 @@ function createIssue() {
 };
 
  fetch(url, {
-   method: 'POST',
+   method: 'post',
    body: JSON.stringify(postData),
    headers: {
     Authorization: `token ${getToken()}`
