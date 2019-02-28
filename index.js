@@ -10,8 +10,9 @@ function forkRepo() {
   const url = `https://api.github.com/repos/learn-co-curriculum/js-ajax-fetch-lab/forks`
   fetch(url, {
    method: 'POST',
-   headers: {
-     Authorization: `token 852afb9cc01fda501437395e8727abbf4f98fb95`
+    headers: {
+      Accept: 'application/vnd.github.v3+json',
+      Authorization: `token ${getToken()}`
     }
    })
   .then(res => res.json())
