@@ -42,7 +42,7 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
-  const url = 'https://api.github.com/repos/Joecleverman/js-ajax-fetch-lab/issues';
+  const url = 'https://api.github.com/repos/Joecleverman/javascript-fetch-la/issues';
 
   fetch(url, {
     headers: {
