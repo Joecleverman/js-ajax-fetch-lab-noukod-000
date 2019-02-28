@@ -6,7 +6,7 @@ function getToken() {
 
 function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
-  const url = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-la/forks'
+  const url = 'https://api.github.com/repos/learn-co-curriculum/javascript-fetch-lab/forks'
   fetch(url, {
    method: 'POST',
     headers: {
@@ -25,7 +25,7 @@ function showResults(json) {
 
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
-    const url = 'https://api.github.com/repos/Joecleverman//javascript-fetch-la/issues';
+    const url = 'https://api.github.com/repos/Joecleverman//javascript-fetch-lab/issues';
     const postData = {
       title: document.getElementById('title').value,
       body: document.getElementById('body').value
@@ -42,7 +42,7 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
-  const url = 'https://api.github.com/repos/Joecleverman/javascript-fetch-la/issues';
+  const url = 'https://api.github.com/repos/Joecleverman/javascript-fetch-lab/issues';
 
   fetch(url, {
     headers: {
