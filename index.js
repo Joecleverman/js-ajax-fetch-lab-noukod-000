@@ -2,7 +2,6 @@ function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
   const token = 'b2d935f1f8a0d25f1b21ee47efb82ec8ea8ff3e1';
-  return token
   //return '';
 }
 
